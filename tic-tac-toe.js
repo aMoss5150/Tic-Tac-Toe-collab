@@ -1,33 +1,85 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-                                                                                                    //! 0, 1, 2
-                                                                                                    //! 3, 4, 5
-                                                                                                    //! 6, 7, 8
-
+    //! 0, 1, 2
+    //! 3, 4, 5
+    //! 6, 7, 8
 
 
 
     //!!               VARIABLES                  //
-
+    let winner = document.querySelector('#game-status');
+    console.log('winner:', winner)
     let counter = 1;
-    let decideWinner = function () {
-         for (let i = 0; i < winnerArray.length; i++) {
-
-            }
-    }
-    // console.log(winnerArray)
-    let s0Val = 'x'
-    let s1Val = 'o'
-    let s2Val = 'o'
-    let s3Val = 'x'
+    let s0Val = ''
+    let s1Val = ''
+    let s2Val = ''
+    let s3Val = ''
     let s4Val = ''
     let s5Val = ''
     let s6Val = ''
     let s7Val = ''
     let s8Val = ''
 
-    let winnerArray = [s0Val, s1Val, s2Val, s3Val, s4Val, s5Val, s6Val, s7Val, s8Val]
-    console.log(winnerArray);
+    // let w = [s0Val, s1Val, s2Val, s3Val, s4Val, s5Val, s6Val, s7Val, s8Val]
+
+
+    // let decideWinner = () => {
+    //     for (let i = 0; i < w.length; i++) {
+    //     }
+    //     //!!X--WINS
+    //     if (w[0] === 'x' && w[1] === 'x' && w[2] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[3] === 'x' && w[4] === 'x' && w[5] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[6] === 'x' && w[7] === 'x' && w[8] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[0] === 'x' && w[3] === 'x' && w[6] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[1] === 'x' && w[4] === 'x' && w[7] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[2] === 'x' && w[5] === 'x' && w[8] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[0] === 'x' && w[4] === 'x' && w[8] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     if (w[2] === 'x' && w[4] === 'x' && w[6] === 'x') {
+    //         winner.innerText = "Winner: X"
+    //     }
+    //     //!!Y--WINS
+
+    //     if (w[0] === 'o' && w[1] === 'o' && w[2] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[3] === 'o' && w[4] === 'o' && w[5] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[6] === 'o' && w[7] === 'o' && w[8] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[0] === 'o' && w[3] === 'o' && w[6] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[1] === 'o' && w[4] === 'o' && w[7] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[2] === 'o' && w[5] === 'o' && w[8] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[0] === 'o' && w[4] === 'o' && w[8] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    //     if (w[2] === 'o' && w[4] === 'o' && w[6] === 'o') {
+    //         winner.innerText = "Winner: O"
+    //     }
+    // }
+
+    // console.log(winnerArray)
 
     // console.log('counter:', counter)
 
@@ -54,6 +106,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s0val = "o"
             }
         };
+        decideWinner();
     });
 
     const s1 = document.querySelector('#square-1');
@@ -73,6 +126,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s1val = "o"
             }
         };
+        decideWinner();
     });
 
     const s2 = document.querySelector('#square-2');
@@ -92,6 +146,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s2val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -112,6 +167,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s3val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -133,6 +189,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s4val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -153,6 +210,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s5val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -173,6 +231,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s6val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -193,6 +252,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s7val = "o"
             }
         };
+        decideWinner();
     });
 
 
@@ -214,6 +274,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 s8val = "o"
             }
         };
+        decideWinner();
     });
 
 
